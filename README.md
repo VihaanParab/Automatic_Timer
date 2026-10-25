@@ -1,6 +1,8 @@
-<h1 style="color: #00f0ff;"&gt;>🚦 AUTOMATIC TIMER </h1>
+<div align="center">
 
-  <p style="color: #ffb700; font-family: monospace;">&gt; SEQUENTIAL SIGNAL PROTOCOL // HARDWARE SIMULATION</p>
+<h1 style="color: #00f0ff;"gt>🚦 AUTOMATIC TIMER </h1>
+
+  <p style="color: #ffb700; font-family: monospace;"&gt> SEQUENTIAL SIGNAL PROTOCOL // HARDWARE SIMULATION</p>
 
 <p>
     <img src="https://img.shields.io/badge/SYSTEM-NOMINAL-108de0?style=for-the-badge&logo=icloud&logoColor=black" alt="Status" />
@@ -46,14 +48,16 @@ An Arduino-powered countdown alarm terminal designed to trigger continuous audio
 
 ### 💻 System Sequence & State Machine 
 
+```text
 [ STATE 01: COUNTDOWN ]  --->  Time Reaches 0  --->  Proceed to Alarm State
-                                                              │
-                                                              ▼
-[ STATE 02: ACTIVE ALARM ] <--- Loops Siren Continuous <--- [ TRIGGER ALERT ]
-          │
-          ▼  (Physical Pushbutton Pressed)
+                                                       |
+                                                       ▼
+[ STATE 02: ACTIVE ALARM ]  <---  Loops Siren Continuous  <---  [ TRIGGER ALERT ]
+                                                       |
+                                                       ▼  (Physical Pushbutton Pressed)
 [ STATE 03: SYSTEM DISARMED / RESET ]
 
+```
 ---
 
 > Engineered, debugged, and deployed by **Vihaan Parab**
